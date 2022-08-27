@@ -2,13 +2,17 @@
 
 A ZSH theme, (maybe)optimized robbyrussell.
 
-![](https://user-images.githubusercontent.com/11868477/186395961-a977ba11-d783-48de-81b0-659ab7b97c86.png)
+![](https://user-images.githubusercontent.com/11868477/187032283-6fef2357-0c83-47a8-9726-2c222097f836.png)
 
 ## Usage
 
-1. Download the `nanika.zsh-theme` file and move to `$ZSH/themes` folder.
-
-2. Modify the `~/.zshrc` file:
 ```sh
-ZSH_THEME="nanika"
+# Go to zsh custom themes path
+cd $ZSH/custom/themes
+
+# Clone this repo
+git clone https://github.com/justforuse/nanika-zsh-theme.git
+
+# Modify the `~/.zshrc` file:
+ZSH_THEME="nanika-zsh-theme/nanika"
 ```
