@@ -7,10 +7,11 @@ function node_prompt_version {
 }
 
 PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-PROMPT+=' %{$fg[cyan]%}%c%{$reset_color%} %{$fg_bold[magenta]%}$(git_current_user_name)%{$reset_color%} $(git_prompt_info) ⌚ %{$fg_bold[magenta]%}%*%{$reset_color%}
+PROMPT+=' %{$fg[cyan]%}%c%{$reset_color%} %{$fg_bold[magenta]%}$(git_current_user_name)%{$reset_color%} $(git_prompt_info) ⌚ %{$fg_bold[blue]%}%*%{$reset_color%}
 %(?:%{$fg_bold[green]%}$ :%{$fg_bold[red]%}$ )'
 
-RPROMPT='%{$(echotc UP 1)%}$(node_prompt_version)%{$(echotc DO 1)%}'
+# RPROMPT='%{$(echotc UP 1)%}$(node_prompt_version)%{$(echotc DO 1)%}'
+RPROMPT='$(node_prompt_version)'
 
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[yellow]%} %{$fg[red]%}"
